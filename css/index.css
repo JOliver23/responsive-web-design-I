@@ -98,7 +98,6 @@ header nav {
 
 header img.logo {
 	display: flex;
-	
 }
 
 header nav a {
@@ -282,5 +281,15 @@ div.footer {
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: center;
+}
+
+/*Mobile & Tablet Responsive Start*/
+
+@media (max-width: 800px) {
+
+}
+
+@media (max-width: 500px) {
+    
 }
 
