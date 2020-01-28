@@ -1,3 +1,286 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+@keyframes bounce {
+	from {
+	  transform: translateY(-10%);
+	}
+	
+	to {
+	  transform: translateY(10%);
+	}
+  }
+
+body {
+	width: 900px;
+	margin: auto;
+} 
+
+header {
+	display: flex;
+	flex-flow: row wrap;
+	width: 900px;
+	border-bottom: 2px solid black;
+}
+
+header nav {
+	display: flex;
+	width:100%;
+	flex-flow: row wrap;
+	justify-content: space-around;
+
+	background: rgb(31, 111, 177);
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+	
+}
+
+header img.logo {
+	display: flex;
+	
+}
+
+header nav a {
+	text-decoration: none;
+	color: rgb(216, 212, 212);
+}
+
+header nav a:hover {
+	border-radius: 5px;
+	padding: 2px;
+	color: #e5ff00;
+	background: rgba(8, 253, 0, 0.466)
+}
+
+header div.iod-img {
+	width: 1200px;
+	height: auto;
+	display: flex;
+	flex-flow:row nowrap;
+	justify-content: space-between;
+	align-content: center;
+	margin: 10% 0 5% 0;
+}
+
+div.title-block h1 {
+	font-size: 70px;	
+}
+
+header div.title-block {
+	display: flex;
+	min-height: auto;
+	flex-flow: column wrap;
+	justify-content: center;
+	align-items: center;
+	margin-left: 15%;
+	
+}
+
+header div.button{
+	border: 1px solid black;
+	min-width: 170px;
+	height: 30px;
+	padding: 3px;
+	text-align: center;
+	border-radius: 5px;
+	font-family: 'Six Caps', sans-serif;
+	font-size: 20px;
+}
+
+header div.button:hover {
+	color: white;
+	background: rgb(139, 0, 28);
+	border-radius: 5px;
+	animation-duration: 1s;
+	animation-name: bounce;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+
+div.body1 {
+	display: flex;
+	justify-content: space-around;
+	flex-flow: row wrap;
+	margin-top: 5%;
+}
+
+div.body1 div {
+	width: 49%;
+	height: 30%;
+}
+
+section.body-info img {
+	margin:5% 0;
+}
+
+div.body2 {
+	display:flex;
+	justify-content: space-between;
+	margin-bottom: 5%;
+	border-bottom: 2px solid black;
+}
+
+div.body2 div {
+	width: 32%;
+	height: 30%;
+	margin-bottom: 5%;
+}
+
+address.contact {
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: space-evenly;
+	max-width: 450px;
+	height:200px;
+		
+}
+
+p.end {
+	height: 50px;
+	align-content: center;
+	margin-top: 5%;
+	margin-bottom: 5%;
+	margin-left: 37%;
+	
+}
+/*Services CSS*/
+img.services-header-img {
+	width: auto;
+	margin: 2% 0;
+}
+
+header h1 {
+	font-size: 30px;
+}
+
+p.services-intro {
+	margin-bottom: 3%;
+}
+
+div.serve-dir {
+	max-width: 900px;
+	height: auto;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	align-content: stretch;
+	border-bottom: 2px solid black;
+}
+
+div.serve-dir div {
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: space-around;
+	width: 40%;
+	height: 38%;
+	padding: 2%;
+	margin: 2% 0;
+	border: 1px solid black;
+	background: rgba(243, 243, 243, 0.589);
+}
+
+div.serve-dir button {
+	width:150px;
+	height:30px;
+	background: white;
+	border: 1px solid black;
+	margin-top: 10px;
+	border-radius: 5px;
+
+}
+
+div.facts {
+	max-width: 900px;
+	height: auto;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	margin: 3%;
+	margin-bottom: 10%;
+}
+
+div.facts .box1 {
+	flex-flow: column wrap;
+	justify-content: center;
+	align-content: center;
+	width: 48%;
+	line-height: 1.2;
+}
+/*UL styling not displaying for some reason...ask?*/
+div.facts .box1 ul li{
+	list-style: square outside none;
+	line-height: 2;
+}
+
+div.facts .box1 ul{
+	margin-top: 2%;
+	margin-left: 5%;
+}
+
+div.footer {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+}
 
