@@ -286,10 +286,22 @@ div.footer {
 /*Mobile & Tablet Responsive Start*/
 
 @media (max-width: 800px) {
+    header img.logo {
+        
+    }
+    header nav {
+        margin-top: 10%;
+    }
+    header div.iod-img img {
+        display: none;
+    }
+    header div.iod-img {
+        justify-content: center;
+    }
 
 }
 
 @media (max-width: 500px) {
-    
+
 }
 
