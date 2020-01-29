@@ -336,14 +336,21 @@ div.footer {
     header img.logo {
         position: absolute;
         top:0;
-        left:36%;
+        left:30%;
         width: 200px;
-        margin: 3%;
+		margin: 3%;
+		
     }
     header nav {
 		flex-flow: column nowrap;
-        
-    }
+		justify-content: center;
+		align-items: center;
+		
+	}
+	header nav a {
+		margin: 5% 0;
+		border-bottom: 2px solid black;
+	}
     header div.title-block {
         
     }
@@ -353,11 +360,29 @@ div.footer {
     header div.iod-img {
         
     }
-    section.body-info {
-        
-    }
+    section.body-info div.body1 {
+		display: flex;
+		flex-flow: column nowrap;
+		justify-content: center;
+		align-items: center;
+		
+	}
+	section.body-info div.body2 {
+		display: flex;
+		flex-flow: column nowrap;
+		justify-content: center;
+		align-items: center;
+		
+	}
+	div.body1 div {
+		width: 95%;
+		margin-bottom: 5%;
+	}
+	div.body2 div {
+		width: 95%;
+	}
     address {
-        
+        margin-left: 5%;
     }
 
 }
