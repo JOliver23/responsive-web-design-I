@@ -92,9 +92,9 @@ header nav {
     border-radius: 5px;
 
 	background: rgb(31, 111, 177);
-	position: -webkit-sticky;
+	/*position: -webkit-sticky;
 	position: sticky;
-	top: 0;
+	top: 0;*/
 	
 }
 
@@ -170,6 +170,9 @@ div.body1 div {
 	width: 49%;
 	height: 30%;
 }
+div.body1 div p {
+    line-height: 1.25;
+}
 
 section.body-info img {
     width: 100%;
@@ -187,6 +190,9 @@ div.body2 div {
 	width: 32%;
 	height: 30%;
 	margin-bottom: 5%;
+}
+div.body2 div p {
+    line-height: 1.25;
 }
 
 address.contact {
@@ -293,10 +299,15 @@ div.footer {
         width: 800px;
     }
     header img.logo {
-        
+        position: absolute;
+        top:0;
+        left:36%;
+        width: 200px;
+        margin: 3%;
     }
     header nav {
-        margin-top: 10%;
+        width: 98%;
+        margin: 12% 1% 0% 1%;
     }
     header div.title-block {
         margin-left: 0%;
@@ -306,6 +317,14 @@ div.footer {
     }
     header div.iod-img {
         justify-content: center;
+        margin-bottom: 10%;
+    }
+    section.body-info {
+        width: 98%;
+        margin-left: 1%;
+    }
+    address {
+        margin: 5% 1%;
     }
 
 }
