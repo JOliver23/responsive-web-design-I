@@ -91,11 +91,7 @@ header nav {
     padding: 1%;
     border-radius: 5px;
 
-	background: rgb(31, 111, 177);
-	/*position: -webkit-sticky;
-	position: sticky;
-	top: 0;*/
-	
+	background: rgb(31, 111, 177);	
 }
 
 header img.logo {
@@ -106,13 +102,6 @@ header nav a {
 	text-decoration: none;
 	color: rgb(216, 212, 212);
 }
-
-/*header nav a:hover {
-	border-radius: 5px;
-	padding: 2px;
-	color: #e5ff00;
-	background: rgba(8, 253, 0, 0.466)
-}*/
 
 header div.iod-img {
 	width: 100%;
@@ -134,8 +123,7 @@ header div.title-block {
 	flex-flow: column wrap;
 	justify-content: center;
 	align-items: center;
-	margin-left: 15%;
-	
+	margin-left: 15%;	
 }
 
 header div.button{
@@ -191,6 +179,7 @@ div.body2 div {
 	height: 30%;
 	margin-bottom: 5%;
 }
+
 div.body2 div p {
     line-height: 1.25;
 }
@@ -201,7 +190,6 @@ address.contact {
 	justify-content: space-evenly;
 	max-width: 37%;
 	height:25%;
-		
 }
 
 p.end {
@@ -210,10 +198,10 @@ p.end {
 	margin-top: 5%;
 	margin-bottom: 5%;
 	margin-left: 37%;
-	
 }
+
 /*Services CSS*/
-img.services-header-img {
+/*img.services-header-img {
 	width: auto;
 	margin: 2% 0;
 }
@@ -274,7 +262,8 @@ div.facts .box1 {
 	align-content: center;
 	width: 48%;
 	line-height: 1.2;
-}
+}*/
+
 /*UL styling not displaying for some reason...ask?*/
 div.facts .box1 ul li{
 	list-style: square outside none;
@@ -350,7 +339,6 @@ div.footer {
 	}
     header nav {
 		flex-flow: column nowrap;
-		/*justify-content: space-around;*/
 		align-items: center;
 		background: rgb(255, 255, 255);
 		width: 102%;
@@ -362,10 +350,7 @@ div.footer {
 		width: 100%;
 		height: 5%;
 		text-align: center;
-		/*padding: 2% 0% 3% 45%;
-		margin-bottom: 3%;*/
 		padding-bottom: 8%;
-		/*margin: 5% 0;*/
 		border-bottom: 2px solid black;
 		color: rgb(63, 62, 62);
 	}
